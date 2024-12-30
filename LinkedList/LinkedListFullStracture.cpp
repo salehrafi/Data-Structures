@@ -26,7 +26,7 @@ void Insert_node_at_font(Node* &head, int data){
     newNode->next = head;
     head = newNode;
 }
-void Insert_node_at_back(Node* head,int data){
+void Insert_node_at_back(Node* &head,int data){
     Node* newNode = new Node(data);
     Node* temp;
     temp = head;
