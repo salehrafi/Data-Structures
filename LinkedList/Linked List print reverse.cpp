@@ -16,7 +16,11 @@ void print_reverse(Node* &temp){
     if(temp == NULL){
         return;
     }
-    print_reverse(temp->next);
+    print_reverse(temp->next); /*
+                                    why we write temp->next inside recursion parameter?
+                                    because, if we are iterate a array, we should go to next index.
+                                    So, Linked list has node, not index so we should write temp->next
+                                */
     cout << temp->data << " ";
 }
 
