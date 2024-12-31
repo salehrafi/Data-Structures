@@ -24,6 +24,7 @@ void insert_at_tail(Node* &head, Node* &tail, int data){
     Node* newNode = new Node(data);
     if(head == NULL){
         head = newNode;
+        tail = newNode;
         return;
     }
     tail->next = newNode;
